@@ -5,35 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">  
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/d3@7/+esm"></script> -->
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div id="app" class="app">
+    <div id="chart_balance">
+      <div id="balance">
+        <p class="bold">
+          My balance
+        </p>
+        <h2>
+          $921.48
+        </h2>
+      </div>
+      <div id="circles">
+        <div id="circle_empty"></div>
+        <div id="circle_filled"></div>
+      </div>
+    </div>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
+    <div id="chart_app">
+      <h2>Spending - Last 7 days</h2>
+      <div id="chart" class="chart"></div>
+      <hr >
+      <div id="chart_info">
+        <div id="monthly_total" class="monthly_total">
+          <p class="grey">
+            Total this month
+          </p>
+          <h2>
+            $478.33
+          </h2>
+        </div>
+        <div id="monthly_change" class="monthly_change">
+          <p>
+            +2.4%
+          </p>
+          <p class="grey">
+            from last month
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

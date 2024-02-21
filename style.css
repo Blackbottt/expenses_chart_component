@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(27, 66%, 92%);
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    /* border: 1px solid red; */
+    width: 100vw;
+}
+
+.app>* {
+    margin: .4rem;
+}
+
+@media screen and (min-width: 80rem) {
+    .app {
+        width: 40vw;
+    }
+}
+
+#chart_balance {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    min-height: 5rem;
+    /* border: 1px solid orangered; */
+    border-radius: 10px;
+    padding: 0 1rem;
+    width: 100%;
+    color: hsl(33, 100%, 98%);
+}
+
+#balance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid orangered; */
+}
+
+#circles {
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid orangered; */
+    width: 6rem;
+}
+
+#circle_empty {
+    position: absolute;
+    left: .5rem;
+    border: 1px solid hsl(27, 66%, 92%);
+    border-radius: 50%;
+    height: 3rem;
+    aspect-ratio: 1;
+    z-index: 2;
+} 
+
+#circle_filled {
+    position: absolute;
+    right: .5rem;
+    border: 1px solid hsl(25, 47%, 15%);
+    border-radius: 50%;
+    height: 3rem;
+    aspect-ratio: 1;
+    background-color: hsl(25, 47%, 15%);
+}
+
+#chart_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(33, 100%, 98%);
+    height: fit-content;
+    /* border: 1px solid orangered; */
+    border-radius: 10px;
+    padding: .4rem;
+    width: 100%;
+}
+
+.chart {
+    /* border: 1px solid orangered; */
+    padding: 1rem;
+}
+
+#chart_info {
+    display: flex;
+    justify-content:space-around;
+    /* border: 1px solid orangered; */
+    width: 100%;
+    /* padding: 1rem; */
+}
+
+.monthly_change {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* border: 1px solid orangered; */
+}
+
+.monthly_total {
+    /* border: 1px solid orangered; */
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.grey {
+    color: hsl(28, 10%, 53%);
+}
+.heavy {
+    fill: hsl(10, 79%, 65%); 
+    border-radius: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+    
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
